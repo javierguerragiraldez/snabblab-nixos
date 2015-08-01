@@ -61,4 +61,15 @@
     openssh.authorizedKeys.keys = [ "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4r6GXZXtq57aqnASJdyLlcmImJFhL12oElwTixUkerB/WMyJO5DWjJd0WKYFPl/BhLQWD3/LFUOyiHYjzWSa9rhO6jc9Ly9Di8/kSulEbf/907TydL04zzhYPd/UQdC3qWixX9Nml5g0CjiBiq3XArJBVcaw4ykZbnL2UOFYrBPiEYpREtjLPHOfLbHl1ZIMSJ1vmSyXRtkY74+hclf6nLBU5FYzVDxSyZZ5fwEqA0f+y47ejcKHlJW2FL8uE8Rh1obAc7pYFsa/xXWOSM8F7bXbVn4ktV/mXA8rMpy1LIG6giC0v+1lFYhKh8trFhYf37xE/mZNmzDC4NkdfolXx" ];
   };
 
+  users.extraUsers.javier = {
+    isNormalUser = true;
+    uid = 1001;
+    description = "Javier Guerra";
+    extraGroups = [ "wheel" "networkmanager" ];
+    openssh.authorizedKeys.keys = [
+      "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxOGl1egCc4VvuMyoNpgj2v723aVD2kIW8XplbDQdMUscaJxNN7jNL2Vxe75iWMxnzTw/vQ70H++RCizSZplK95q0A3i7CC33TXMwfvI1eM4x0V/WxyXDrFOVNlFghb38ROF95c+4q9MLCXtxlqwcQ1Xq2+twQ/lrYoPNXjgOfFJogu7fETOURiqfgw2ChohGcf1w6NZb6OFd/XBavqiNso8ZdeKQnNBYOHrp4cpoGfZ0iUf1cc0jc/wUHEZGZZWCTK660uPXjvkxEdewaaZCHhhrQPqUUErLWSZizo6Y1YTBVAMjKKI6gdcpJbKgp1cxZM1YWDKmUI/z6kQghmVe/ javier@remanta",
+      "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAw3jTiDO6z93QcKEXEaUF8eIG1qcnPVA2nyodXIMzzyG6AIW9ydNi2H/vZ8RNb1EUZOusi3NNVmEEe3D/NXlaXLrmHouCkWbq0zsAbix0vSEdbGAvPOVTtchN+jiRU/sVtdcs3dD2cPYiayTwXpSDkZrd/cho9U52qgaVNvwwUik= javier@chusma"
+    ];
+  };
+
 }
